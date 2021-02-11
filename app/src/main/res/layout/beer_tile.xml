@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/beer_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/beer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beer name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:autoSizeTextType="uniform"
+                    android:maxLines="1"
+                    android:ellipsize="end">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/beer_sDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short description"
+                    android:textColor="@color/silver"
+                    android:layout_marginStart="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:autoSizeTextType="uniform">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/beer_lDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="Long description"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/silver"
+                    android:layout_marginStart="10dp"
+                    android:autoSizeTextType="uniform">
+
+                </TextView>
+
+
+                <Button
+                    android:id="@+id/info_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:text="MORE INFO"
+                    android:textColor="@color/darkorange">
+
+
+                </Button>
+
+            </LinearLayout>
+
+</LinearLayout>
